@@ -64,6 +64,8 @@ header p{
     height: 80px;
 
 }
+
+
 section p{
     padding: 10px;
     font-family: Arial, Helvetica;
@@ -167,7 +169,7 @@ footer p a{
     height: 100%;
     padding: 0;
 }
-img{
+div img{
     padding: 10px;
     display: grid;
     width: 40%;
