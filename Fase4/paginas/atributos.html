@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Proyecto de sitio Web 2022 16-04 Fase 2</title>
+    <link rel="stylesheet" type="text/css" href="../estilo.css"> 
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="temas.html">Temas</a>
+            <ul>
+                <li><a href="etiquetas.html">Etiquetas</a></li>
+                <li><a href="atributos.html">Atributos</a></li>
+
+            </ul>
+        </li>
+        <li><a href="recurso_digital.html">Recursos Digitales</a></li>
+        <li><a href="aprendizaje.html">Aprendizaje</a>
+            <ul>
+                <li><a href="aprendizaje1.html">Aprendizaje1</a></li>
+                <li><a href="aprendizaje2.html">Aprendizaje2</a></li>
+            </ul>
+        </li>
+        <li><a href="acerca_de.html">Acerca de</a></li>
+    </ul>
+    <header><h1><strong>Etiquetas Básicas de HTML, atributos y valores</strong></h1></header>
+    
+    <article>
+        <h1>Atributos</h1>
+        <p>
+            En algunas etiquetas HTML, existen algunos atributos específicos (que pueden ser opcionales u obligatorios). 
+            Los atributos determinan cierta información sobre la etiqueta (o su modo de actuar) y generalmente van asociados 
+            a un valor determinado. Este par atributo-valor se escribe después del nombre de la etiqueta, 
+            separándola por espacio y antes del carácter > de la etiqueta de apertura: 
+        </p>
+        <img src="img/Atributo.png" width="500" height="100"alt="Ejemplo de atributo con etiqueta Strong">
+        <p>
+            En este caso, la etiqueta sería strong, el atributo id, el valor de id sería dato, 
+            mientras que el contenido de la etiqueta es Contenido. Por otro lado, y al igual que las etiquetas, 
+            cada atributo tiene una misión y comportamiento concreto. Aunque los valores pueden ir rodeados por 
+            comillas simples, se recomienda escribir el valor siempre entre comillas dobles.<br>
+
+            Existen 3 tipos de atributos dependiendo de sus valores: 
+            <ul>
+                <li><strong>Conjunto finito de valores:</strong> Son los atributos en los que puedes especificarle una serie 
+                    de valores limitada. Cualquier otro valor que no sea uno de ellos, no será válido.
+                </li>
+                <li><strong>Valores libres:</strong> Son los atributos en los que puedes especificar un valor libremente, 
+                        como una dirección URL o un texto, y no existe una serie de valores específicos para escribir.
+                </li>
+                <li><strong>Valores booleanos:</strong> Son los atributos que deben tener un valor verdadero (true) o un valor falso (false). 
+                        En HTML5 estos atributos se escriben sin valor (solo el atributo) si son verdaderos y 
+                        se omiten para indicar que son falsos. 
+                </li>
+            </ul>
+        </p>
+    </article>    
+    <article>
+        <h1>Contenido de la etiqueta</h1>
+        <p>
+            En el interior de la etiqueta HTML (después de la etiqueta de apertura y antes de la etiqueta de cierre) 
+            se debe colocar la información que queremos que sea afectada por dicha etiqueta. En el siguiente ejemplo 
+            se ve como contiene un fragmento de texto:
+        </p>
+        <img src="img/Contenido.png" width="800" height="100"alt="Ejemplo de contenido con etiqueta Strong">
+        <p>
+            Ten en cuenta que una etiqueta puede tener varios pares atributo-valor, como se ve en el ejemplo anterior, 
+            pero nunca se debe repetir el mismo atributo en una misma etiqueta varias veces, ya que sobreescribiría 
+            al anterior. El orden de los atributos no importa. Más adelante explicaremos que tipos de atributos existen 
+            y para que sirven.
+        </p>
+        <p>
+            Sin embargo, una etiqueta puede contener desde un fragmento de texto hasta un grupo de etiquetas. 
+            Esto depende mucho de la etiqueta a utilizar, y se verá más adelante en el apartado de etiquetas. 
+            Un posible ejemplo sería el siguiente:
+        </p>
+        <img src="img/Contenido2.png" width="500" height="100" alt="Ejemplo de contenido con etiqueta Strong">
+        <p>
+            Nótese que dentro de la etiqueta < div > vemos que no sólo hay un fragmento de texto, 
+            sino que además incluye otra etiqueta, < strong > en este caso. Esto ocurre en las etiquetas 
+            de agrupación, que veremos más adelante.
+        </p>
+    </article>
+    <blockquote>
+        <footer>
+            <cite>
+                <a href="https://lenguajehtml.com/html/introduccion/estructura-etiqueta-html/">ManzDev. Autor de la pagina Lenguaje HTML</a>
+            </cite>
+        </footer>
+    </blockquote>
+</body>
+</html>

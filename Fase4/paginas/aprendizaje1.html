@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Proyecto de sitio Web 2022 16-04 Fase 4</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css"> 
+</head>
+<body>
+    <header>
+     <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Aprendizaje</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Temas <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="etiquetas.html">Etiquetas</a></li>
+                    <li><a href="atributos.html">Atributos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="recurso_digital.html">Recurso Digital</a>
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Aprendizaje <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="aprendizaje1.html">Aprendizaje1</a></li>
+                  <li><a href="aprendizaje2.html">Aprendizaje2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="acerca_de.html">Acerca de</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <h1><strong>Etiquetas Básicas de HTML, atributos y valores</strong></h1>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <section>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXvqaLpEuxi-bmkkDJl-ANuXxR5tdczWfisVY90EuYnqTskw/viewform?embedded=true"
+         width="640" height="978" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    </section>
+
+    <section>
+        <h1><strong>CSS Media Queries</strong></h1> 
+        <p>
+            Las media queries (en español "consultas de medios") son útiles cuando deseas modificar tu página web 
+            o aplicación en función del tipo de dispositivo (como una impresora o una pantalla) o de características y parámetros específicos (como la resolución de la pantalla o el ancho del viewport del navegador).
+
+            <br><strong>Se utilizan para:</strong> <br>
+
+            Aplicar estilos condicionales con las reglas-at @media e @import de CSS. <br>
+            Indicar medios específicos en los elementos < link>, < source> y otros elementos HTML. <br>
+            Testear y monitorizar los estados de los medios usando los métodos de javascript Window.matchMedia() 
+            y MediaQueryList.addListener(). <br>
+            
+            <br><strong>Sintaxis</strong> <br>
+            Las media queries consisten de un tipo de medio opcional y una o más expresiones de características de medios.
+            Varias consultas se pueden combinar utilizando operadores lógicos. No distinguen entre mayúsculas y minúsculas.
+            <br>
+            El resultado de la consulta es "verdadero" cuando el tipo de medio (si se especifica) coincide con el dispositivo 
+            en el que se está mostrando el documento y todas las expresiones en el media query son "verdaderas". 
+            En este caso, se aplica los estilos correspondientes, siguiendo las reglas usuales de cascada.
+        </p>
+    </section>
+</body>
+</html>

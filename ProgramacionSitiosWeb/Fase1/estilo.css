@@ -1,0 +1,14 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+td{
+    border: 1px solid black;
+}
+h3{
+    color: brown;
+    text-align: center;
+}
