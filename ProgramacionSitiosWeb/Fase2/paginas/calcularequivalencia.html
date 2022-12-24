@@ -16,7 +16,9 @@
       <form id="form2" class="row g-3 needs-validation" novalidate>
         <div class="col-md-3">
           <label for="validationCustom03" class="form-label">Ingrese el valor a convertir</label>
-          <input type="text" class="form-control" id="ingrese_valor" required placeholder="Ingrese el valor">
+
+          <input type="number" class="form-control" id="valor1" required placeholder="Ingrese el valor">
+
           <div class="invalid-feedback">
             Please provide a valid city.
           </div>
@@ -24,14 +26,15 @@
 
         <div class="col-md-3">
           <label for="validationCustom04" class="form-label">De</label>
-          <select class="form-select" id="seleccion1" required>
-            <option selected disabled value=""></option>
+
+          <select class="form-select" id="unidad1">
             <option>byte</option>
             <option>kilobyte</option>
             <option>megabyte</option>
             <option>gigabyte</option>
             <option>terabyte</option>
           </select>
+
           <div class="invalid-feedback">
             Please select a valid state.
           </div>
@@ -39,28 +42,31 @@
         
           <div class="col-md-3">
             <label for="validationCustom04" class="form-label">A</label>
-            <select class="form-select" id="seleccion2" required>
-              <option selected disabled value=""></option>
+
+            <select class="form-select" id="unidad2">
                 <option>byte</option>
                 <option>kilobyte</option>
                 <option>megabyte</option>
                 <option>gigabyte</option>
                 <option>terabyte</option>
             </select>
+
             <div class="invalid-feedback">
               Please select a valid state.
-            </div>
+            </div>            
           </div>
-        <div class="col-md-6">
+
+          <div class="resultado" id="result">---</div>
+        <!-- <div class="col-md-6">
             <label for="validationCustom03" class="form-label">Resultado</label>
             <input type="number" class="form-control" id="resultado" required>
             <div class="invalid-feedback">
               Please provide a valid city.
             </div>
-        </div>
-        <div class="col-12">
+        </div> -->
+        <!-- <div class="col-12">
           <button class="btn btn-primary" type="submit" id="btn_convertir">Convertir</button>
-        </div>
+        </div> -->
       </div>
     </form>
       <script src="/ProgramacionSitiosWeb/Fase2/jsequivalencia.js"></script>
