@@ -5,13 +5,57 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap v5.2</title>
+  <title>Electronic Milenium SAS</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Electronic Milenium SAS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Administrador</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Inventario
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./ingresarproducto.html">Ingresar Producto</a></li>
+                <li><a class="dropdown-item" href="./actualizarproducto.html">Actualizar Producto</a></li>
+                <li><a class="dropdown-item" href="./eliminarproducto.html">Eliminar Producto</a></li>
+                <li><a class="dropdown-item" href="./consultarproducto.html">Consultar Producto</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Utilidades
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./calcularvalor.html">Calcular Precio</a></li>
+              <li><a class="dropdown-item" href="./calcularequivalencia.html">Calcular Equivalencia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
   <div class="container">
     <p>
     <h2 class="text-center ">Calcular el valor de una compra</h2>
@@ -21,15 +65,15 @@
         <label class="form-label" for="">Valor de la compra</label>
         <input class="form-control" type="text" id="valor_compra" placeholder="Ingresar el valor de la compra">
       </div>
-      <div class="col-md-5"">
+      <div class="col-md-5">
         <label class="form-label" for="">Porcentaje de ganancia</label>
         <input class="form-control" type="text" id="porcentaje" placeholder="ingresar el porcentaje de la utilidad">
       </div>
-      <div class="col-md-5"">
+      <div class="col-md-5">
         <label class="form-label" for="">Porcentaje de impuestos (IVA)</label>
         <input class="form-control" type="text" id="iva" placeholder="ingresar el porcentaje de impuestos">
       </div>
-    <p>
+      <p>
       <!-- botones -->
       <div class="buttons">
         <button type="submit" class="btn btn-success">Calcular</button>
@@ -46,12 +90,13 @@
         <label class="form-label" for="">Resultado ganancias</label>
         <input class="form-control" type="text" id="rganancia" placeholder="resultado ganancias" readonly>
       </div>
+    </form>
   </div>
-  </form>
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-  <script src="/ProgramacionSitiosWeb/Fase2/jscript.js"></script>
+  <script src="../jscript.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
